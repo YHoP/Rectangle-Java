@@ -9,7 +9,7 @@ import static spark.Spark.*;
 public class Rectangle {
 	private int mLength;
 	private int mWidth;
-  	
+
   	// public static void main(String[] args) {}
 
 	public Rectangle(int length, int width){
@@ -24,9 +24,12 @@ public class Rectangle {
 	public int getWidth() {
 	  return mWidth;
 	}
-	
+
 	public boolean isSquare() {
 		return mLength == mWidth;
 	}
 
+	public int area() {
+  return mLength * mWidth;
+	}
 }
